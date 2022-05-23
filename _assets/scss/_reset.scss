@@ -1,0 +1,115 @@
+// main: main.scss
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: $base-font;
+    color: $black;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+*:hover:before,
+*:hover:after,
+*:before,
+*:after {
+    text-decoration: underline;
+}
+
+*:hover:before,
+*:hover:after,
+*:before,
+*:after {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+}
+
+h1 {
+    color: $black;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 66px;
+}
+
+h2 {
+    color: $black;
+    font-weight: 300;
+    @include font-size($font36);
+    line-height: 42.19px;
+    margin: 0;
+}
+
+h3 {
+    color: $black;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+h4 {
+    color: $black;
+    font-weight: 400;
+    @include font-size($font24);
+    line-height: 28.13px;
+}
+
+h5 {
+    color: $black;
+    font-weight: 400;
+    @include font-size($font20);
+    line-height: 28px;
+}
+
+p {
+    color: $black;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 0 16px;
+
+
+    &.lg {
+        font-size: 19px;
+        line-height: 30px;
+    }
+
+    &.sm {
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+
+a {
+    color: $black;
+    text-decoration: none;
+
+    &:hover {
+        color: $black;
+        text-decoration: none;
+    }
+}
+
+.text {
+    color: $black;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+
+    &--lg {
+        font-size: 19px;
+        line-height: 30px;
+    }
+
+    &--sm {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+    }
+}

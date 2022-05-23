@@ -1,0 +1,30 @@
+﻿// main: main.scss
+
+@mixin font($font-size, $font-weight) {
+    $rem: ($font-size / $baseFontSize);
+    font-size: #{$rem}rem;
+    font-weight: $font-weight;
+}
+
+@mixin font-size($font-size) {
+    $rem: ($font-size / $baseFontSize);
+    font-size: #{$rem}rem;
+}
+
+@mixin max1280 {
+    @media (max-width: 1280px) {
+        @content;
+    }
+} 
+
+@mixin tablet-mobil {
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin mobil {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
