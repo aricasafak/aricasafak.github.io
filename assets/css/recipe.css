@@ -1,0 +1,48 @@
+body {
+    font-family: "Lucida Sans Unicode", Helvetica, Arial;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond;
+    background-image: url(/assets/img/pie/silverware.jpg);
+    background-repeat: repeat;
+}
+
+h1  {
+    font-size: 22pt;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 18pt;
+}
+
+h1, h2 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    text-decoration: underline;
+    letter-spacing: 0.25em;
+    width: fit-content;
+}
+
+a {
+    color: #A4A400;
+}
+
+blockquote {
+    background-color: #FFFFA8;
+    font-style: italic;
+}
+
+ul li {
+    list-style: url(/assets/img/pie/pie_bullet.png);
+}
+
+.float-right {
+    float: right;
+}
+
+.right {
+    text-align: right;
+    clear: both;
+}
