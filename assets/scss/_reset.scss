@@ -36,12 +36,14 @@ h1 {
     font-weight: 500;
     font-size: 56px;
     line-height: 66px;
+    margin: 0;
 }
 
-h2 {
+h2 { 
     color: $black;
     font-weight: 300;
     @include font-size($font36);
+    font-weight: 500;
     line-height: 42.19px;
     margin: 0;
 }

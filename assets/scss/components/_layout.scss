@@ -1,5 +1,13 @@
 ﻿// main: ../main.scss
 
+h1 {
+    margin-bottom: 32px;
+}
+
+h2 {
+    margin-bottom: 24px;
+}
+
 .timeline {
     height: 400px;
     position: relative;
@@ -23,6 +31,9 @@
 .content {
     padding: 32px 32px 64px;
 
+    &.about-me {
+        background-color: #4e574e;
+    }
 }
 
 .contact {
@@ -51,6 +62,36 @@
 
         img {
             width: 130px;
+        }
+    }
+}
+
+.about-me {
+    h1,h2 {
+        color: #ffd700;
+    }
+
+    ul {
+        margin-bottom: 24px;
+    }
+
+    p, li {
+        color: #dbc0c0;
+
+        strong {
+            color: #81cbcb;
+        }
+
+        a {
+            color: #7777ff;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    }
+    &__float {
+        margin-bottom: 16px;
+        span, img {
+            margin-right: 8px;
         }
     }
 }
