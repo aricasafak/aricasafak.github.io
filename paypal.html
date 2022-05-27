@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 32px 128px;
+            border-bottom: 1px solid blue;
+        }
+        header nav {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        header nav a {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .btn {
+            padding: 12px 32px;
+            border: 1px solid blue;
+            border-radius: 20px;
+            background-color: white;
+            color: blue;
+        }
+
+        .btn-secondary {
+            background-color: blue;
+            color: white;
+            margin-left: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><img src="/assets/img/happy-cat.jpg" width="50" alt=""></a>
+            <a href="#">Personal</a>
+            <a href="#">Business</a>
+            <a href="#">Developer</a>
+            <a href="#">Help</a>
+        </nav>
+        <div>
+            <button class="btn btn-primary">Login</button>
+            <button class="btn btn-secondary">Sign Up</button>
+        </div>
+    </header>
+    
+</body>
+</html>

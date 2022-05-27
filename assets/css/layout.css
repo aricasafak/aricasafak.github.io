@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(20, 19, 31);
+    color: white;
+}
+
+p {
+    color: #ccc;
+}
+
+img {
+    width: 100px;
+}
+
+.footer {
+    padding: 96px 48px 32px;
+}
+
+.footer > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid white;
+}
+
+.footer > div > div {
+    flex: 1;
+}
+
+.footer > div li {
+    font-style: italic;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social a img {
+    width: 24px;
+    margin-right: 8px;
+}
+
+.social ul { 
+    list-style: url(/assets/img/asg-3/twitter.png);
+}
+.social ul li {
+    margin-bottom: 12px;
+}
+.input-block {
+    width: 100%;
+    position: relative;
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.input-block input {
+    width: 100%;
+    padding: 12px 0 12px 12px;
+    background-color: rgb(34, 32, 54);
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.input-block button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 80px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    z-index: 123;
+    cursor: pointer;
+}
+
+nav {
+    padding-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .colorlib {
+    font-size: 24px;
+}
+
+.footer .validator {
+    justify-content: flex-end;
+    border: none;
+}
+
+@media only screen and (max-width: 777px) {
+    .footer > div {
+        display: block;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+}
