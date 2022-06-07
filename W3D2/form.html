@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="/" id="id">
+        TextField => <input id="inputText" name="text-input" type="text" />
+        <br>
+        <br>
+        TextArea => <textarea id="inputTextArea" name="text-area" type="text" row="20" col="4"></textarea>
+        <br>
+        <br>
+        Radio =>  <div style="display: inline-block" id="radioGroup">
+            <input type="radio" name="radio-group" checked="checked" value="Radio1">Radio 1</input> 
+            <input type="radio" name="radio-group" value="Radio2">Radio 2</input> 
+            <input type="radio" name="radio-group" value="Radio3"> Radio 3</input>
+        </div>
+        <br>
+        <br>
+        Select =>  
+        <select id="selectId" name="select">
+            <option value="Option1">Option 1</option>
+            <option value="Option2">Option 2</option>
+            <option value="Option3">Option 3</option>
+            <option value="Option4">Option 4</option>
+        </select>
+        <br>
+        <br>
+        Check =>  <div style="display: inline-block" id="checkboxGroup">
+            <input type="checkbox" name="checkbox-group" checked="checked" value="Checkbox1">Checkbox 1</input> 
+            <input type="checkbox" name="checkbox-group" value="Checkbox2">Checkbox 2</input> 
+            <input type="checkbox" name="checkbox-group" value="Checkbox3"> Checkbox 3</input>
+        </div>
+        <br>
+        <br>
+        <input type="submit"/>
+        <button type="button" id="reload">Clear</button>
+    </div>
+</body>
+</html>
