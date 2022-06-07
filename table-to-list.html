@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table to List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>    
+        $(function(){
+            let objArray = [{name: "b", age: 70}, {name: "a", age: 60}, {name: "c", age: 50}];
+
+            const table = document.createElement("table");
+            table.id = "myTable";
+            document.body.append(table);
+
+            buildTable(objArray, table);
+
+
+            // SORT AND REBUOLD
+            objArray.sort((a,b) => a.age < b.age ? -1 : 1);
+
+            table.innerHTML = "";
+            buildTable(objArray, table);
+        });
+
+        function buildTable(objArray, tableElement) {
+            const tableHeaderTR = document.createElement("tr");
+            for(let key in objArray[0]) {
+                const tableHeaderTRKey = document.createElement("th");
+                tableHeaderTRKey.innerHTML = key.toUpperCase();
+                tableHeaderTR.append(tableHeaderTRKey);
+            }
+            tableElement.append(tableHeaderTR);
+            
+            for(let obj of objArray) {
+                const tableRowElement = document.createElement("tr");
+
+                for(let objKey in obj) {
+                    const columnElement = document.createElement("td");
+                    columnElement.innerHTML = obj[objKey];
+                    tableRowElement.append(columnElement);
+                }
+
+                tableElement.append(tableRowElement);
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
